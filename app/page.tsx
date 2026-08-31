@@ -108,6 +108,7 @@ type SpriteSheet = {
   rows: number;
   standardTile: { width: number; height: number };
   highResolutionTile: { width: number; height: number } | null;
+  sourceTile?: { width: number; height: number };
 };
 
 type BirdFilters = {
@@ -312,11 +313,14 @@ function CardSprite({
     : highResolutionUrl
       ? `image-set(url("${standardUrl}") 1x, url("${highResolutionUrl}") 2x)`
       : `url("${standardUrl}")`;
-  const x = sheet.columns <= 1 ? 0 : (sprite.column / (sheet.columns - 1)) * 100;
-  const y = sheet.rows <= 1 ? 0 : (sprite.row / (sheet.rows - 1)) * 100;
   const tile = highResolution && sheet.highResolutionTile
     ? sheet.highResolutionTile
     : sheet.standardTile;
+  const sourceTile = sheet.sourceTile ?? tile;
+  const sourceSheetWidth = sheet.columns * sourceTile.width;
+  const sourceSheetHeight = sheet.rows * sourceTile.height;
+  const x = sheet.columns <= 1 ? 0 : (sprite.column * sourceTile.width / (sourceSheetWidth - sourceTile.width)) * 100;
+  const y = sheet.rows <= 1 ? 0 : (sprite.row * sourceTile.height / (sourceSheetHeight - sourceTile.height)) * 100;
 
   return (
     <div
@@ -1117,7 +1121,7 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-x-3 gap-y-6 sm:grid-cols-3 sm:gap-x-4 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 2xl:gap-x-5">
               {sortedBonusCards.map((card) => (
                 <button key={card.id} type="button" onClick={() => openRootDetail({ kind: 'bonus', id: card.id })} aria-label={`查看${card.names.zh}详情`} className="encyclopedia-card group min-w-0 text-left focus-visible:rounded-2xl focus-visible:ring-3 focus-visible:ring-[#4c8068] focus-visible:outline-none">
-                  <div className="relative mx-auto w-full max-w-[132px] overflow-hidden rounded-[10px] bg-[#ddd3c4] shadow-[0_9px_24px_rgb(58_44_25/16%)] transition duration-200 group-hover:-translate-y-1 group-hover:shadow-[0_16px_34px_rgb(58_44_25/22%)] group-focus-visible:-translate-y-1 sm:max-w-[146px] xl:max-w-[158px]">
+                  <div className="relative mx-auto w-full max-w-[162px] overflow-hidden rounded-[10px] bg-[#ddd3c4] shadow-[0_9px_24px_rgb(58_44_25/16%)] transition duration-200 group-hover:-translate-y-1 group-hover:shadow-[0_16px_34px_rgb(58_44_25/22%)] group-focus-visible:-translate-y-1">
                     <CardSprite sprite={card.sprite} className="w-full" />
                     {card.languageDependent && <span className="absolute top-2 right-2 grid size-7 place-items-center rounded-full bg-[#9a5d3e]/88 text-white shadow-sm" title="语言相关"><Languages className="size-3.5" /></span>}
                   </div>

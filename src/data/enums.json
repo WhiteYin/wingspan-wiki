@@ -382,10 +382,14 @@
       "standardFile": "bonus_cards.png",
       "highResolutionFile": null,
       "columns": 10,
-      "rows": 3,
+      "rows": 5,
       "standardTile": {
+        "width": 162,
+        "height": 247
+      },
+      "sourceTile": {
         "width": 250,
-        "height": 630
+        "height": 378
       },
       "highResolutionTile": null
     }
