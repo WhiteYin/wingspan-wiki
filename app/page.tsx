@@ -1035,10 +1035,10 @@ export default function Home() {
             </div>
 
             <div role="tablist" aria-label="卡牌类型" className="grid h-11 grid-cols-2 rounded-xl border border-[#cfc1ac] bg-[#e9e1d3]/75 p-1 lg:w-64">
-              <button role="tab" aria-selected={tab === 'bird'} type="button" onClick={() => changeTab('bird')} className={`flex items-center justify-center gap-2 rounded-lg px-4 text-sm font-medium transition focus-visible:ring-2 focus-visible:ring-[#4c8068] focus-visible:outline-none ${tab === 'bird' ? 'bg-[#315f4c] text-white shadow-sm' : 'text-[#685f52] hover:bg-white/60'}`}>
+              <button id="bird-tab" role="tab" aria-controls="card-results" aria-selected={tab === 'bird'} type="button" onClick={() => changeTab('bird')} className={`flex items-center justify-center gap-2 rounded-lg px-4 text-sm font-medium transition focus-visible:ring-2 focus-visible:ring-[#4c8068] focus-visible:outline-none ${tab === 'bird' ? 'bg-[#315f4c] text-white shadow-sm' : 'text-[#685f52] hover:bg-white/60'}`}>
                 <Bird className="size-4" /> 鸟卡 <span className="text-xs opacity-70">180</span>
               </button>
-              <button role="tab" aria-selected={tab === 'bonus'} type="button" onClick={() => changeTab('bonus')} className={`flex items-center justify-center gap-2 rounded-lg px-4 text-sm font-medium transition focus-visible:ring-2 focus-visible:ring-[#4c8068] focus-visible:outline-none ${tab === 'bonus' ? 'bg-[#315f4c] text-white shadow-sm' : 'text-[#685f52] hover:bg-white/60'}`}>
+              <button id="bonus-tab" role="tab" aria-controls="card-results" aria-selected={tab === 'bonus'} type="button" onClick={() => changeTab('bonus')} className={`flex items-center justify-center gap-2 rounded-lg px-4 text-sm font-medium transition focus-visible:ring-2 focus-visible:ring-[#4c8068] focus-visible:outline-none ${tab === 'bonus' ? 'bg-[#315f4c] text-white shadow-sm' : 'text-[#685f52] hover:bg-white/60'}`}>
                 <Sparkles className="size-4" /> 奖励卡 <span className="text-xs opacity-70">26</span>
               </button>
             </div>
@@ -1055,13 +1055,13 @@ export default function Home() {
           {renderFilterPanel()}
         </aside>
 
-        <section role="tabpanel" aria-label={tab === 'bird' ? '鸟卡列表' : '奖励卡列表'} className="min-w-0">
+        <section id="card-results" role="tabpanel" aria-labelledby={tab === 'bird' ? 'bird-tab' : 'bonus-tab'} className="min-w-0">
           <div className="mb-4 flex flex-wrap items-center gap-2.5 rounded-2xl border border-[#d8ccb9] bg-white/55 p-2.5 shadow-sm sm:p-3">
             <Button variant="outline" onClick={() => setMobileFiltersOpen(true)} className="border-[#cbbda8] bg-white/80 lg:hidden">
               <SlidersHorizontal /> 筛选
               {activeChips.length > 0 && <span className="rounded-full bg-[#3d745c] px-1.5 text-[11px] text-white">{activeChips.length}</span>}
             </Button>
-            <div className="mr-auto flex items-baseline gap-2 px-1">
+            <div role="status" aria-live="polite" aria-atomic="true" className="mr-auto flex items-baseline gap-2 px-1">
               <strong className="font-heading text-xl text-[#315f4c]">{resultCount}</strong>
               <span className="text-sm text-[#776e61]">张结果</span>
             </div>
