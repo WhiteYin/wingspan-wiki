@@ -1153,7 +1153,7 @@ export default function Home() {
       </Sheet>
 
       <Dialog open={Boolean(selectedCard)} onOpenChange={(open) => { if (!open) closeDetail(); }}>
-        <DialogContent showCloseButton={false} className="detail-dialog thin-scrollbar max-h-[92vh] w-[min(96vw,1280px)] max-w-[min(96vw,1280px)] overflow-x-hidden overflow-y-auto rounded-3xl border border-[#cfc0aa] bg-[#fbf8f0] p-0 shadow-[0_28px_90px_rgb(35_29_20/28%)] sm:max-w-[min(96vw,1280px)]">
+        <DialogContent showCloseButton={false} className="detail-dialog max-h-[92vh] w-[min(96vw,1280px)] max-w-[min(96vw,1280px)] overflow-hidden rounded-3xl border border-[#cfc0aa] bg-[#fbf8f0] p-0 shadow-[0_28px_90px_rgb(35_29_20/28%)] sm:max-w-[min(96vw,1280px)]">
           <DialogHeader className="sticky top-0 z-20 flex-row items-center border-b border-[#ddd1bf] bg-[#fbf8f0]/95 px-3 py-2.5 backdrop-blur sm:px-5">
             <div className="flex min-w-0 flex-1 items-center gap-1">
               {detailStack.length > 1 && (
@@ -1173,6 +1173,7 @@ export default function Home() {
             </div>
           </DialogHeader>
 
+          <div className="detail-dialog-body thin-scrollbar min-h-0 min-w-0 overflow-x-hidden overflow-y-auto">
           {selectedBird && (
             <div className="grid gap-0 lg:grid-cols-[minmax(280px,0.82fr)_minmax(360px,1.18fr)]">
               <div className="flex min-h-[430px] items-start justify-center overflow-auto bg-[#e9e1d4] p-5 sm:p-8 lg:min-h-[670px] lg:items-center">
@@ -1241,6 +1242,7 @@ export default function Home() {
               </article>
             </div>
           )}
+          </div>
         </DialogContent>
       </Dialog>
 

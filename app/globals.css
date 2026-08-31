@@ -125,6 +125,21 @@
   background-clip: padding-box;
 }
 
+.detail-dialog {
+  grid-template-rows: auto minmax(0, 1fr) !important;
+  gap: 0 !important;
+  overflow: hidden !important;
+}
+
+.detail-dialog-body {
+  min-width: 0;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
 @media (min-width: 640px) {
   .detail-dialog {
     width: min(96vw, 1280px) !important;
@@ -134,12 +149,28 @@
 
 @media (max-width: 639px) {
   .detail-dialog {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
     inset: 0 !important;
     width: 100vw !important;
+    min-width: 100vw !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    min-height: 100vh !important;
+    min-height: 100dvh !important;
     max-width: none !important;
     max-height: none !important;
     translate: none !important;
     transform: none !important;
+    box-sizing: border-box !important;
+    display: grid !important;
+    grid-template-rows: auto minmax(0, 1fr) !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
     border-radius: 0 !important;
   }
 }
