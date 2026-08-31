@@ -1117,7 +1117,7 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-x-3 gap-y-6 sm:grid-cols-3 sm:gap-x-4 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 2xl:gap-x-5">
               {sortedBonusCards.map((card) => (
                 <button key={card.id} type="button" onClick={() => openRootDetail({ kind: 'bonus', id: card.id })} aria-label={`查看${card.names.zh}详情`} className="encyclopedia-card group min-w-0 text-left focus-visible:rounded-2xl focus-visible:ring-3 focus-visible:ring-[#4c8068] focus-visible:outline-none">
-                  <div className="relative overflow-hidden rounded-[10px] bg-[#ddd3c4] shadow-[0_9px_24px_rgb(58_44_25/16%)] transition duration-200 group-hover:-translate-y-1 group-hover:shadow-[0_16px_34px_rgb(58_44_25/22%)] group-focus-visible:-translate-y-1">
+                  <div className="relative mx-auto w-full max-w-[132px] overflow-hidden rounded-[10px] bg-[#ddd3c4] shadow-[0_9px_24px_rgb(58_44_25/16%)] transition duration-200 group-hover:-translate-y-1 group-hover:shadow-[0_16px_34px_rgb(58_44_25/22%)] group-focus-visible:-translate-y-1 sm:max-w-[146px] xl:max-w-[158px]">
                     <CardSprite sprite={card.sprite} className="w-full" />
                     {card.languageDependent && <span className="absolute top-2 right-2 grid size-7 place-items-center rounded-full bg-[#9a5d3e]/88 text-white shadow-sm" title="语言相关"><Languages className="size-3.5" /></span>}
                   </div>
@@ -1149,7 +1149,7 @@ export default function Home() {
       </Sheet>
 
       <Dialog open={Boolean(selectedCard)} onOpenChange={(open) => { if (!open) closeDetail(); }}>
-        <DialogContent showCloseButton={false} className="detail-dialog thin-scrollbar max-h-[92vh] max-w-[1120px] overflow-y-auto rounded-3xl border border-[#cfc0aa] bg-[#fbf8f0] p-0 shadow-[0_28px_90px_rgb(35_29_20/28%)]">
+        <DialogContent showCloseButton={false} className="detail-dialog thin-scrollbar max-h-[92vh] w-[min(96vw,1280px)] max-w-[min(96vw,1280px)] overflow-x-hidden overflow-y-auto rounded-3xl border border-[#cfc0aa] bg-[#fbf8f0] p-0 shadow-[0_28px_90px_rgb(35_29_20/28%)] sm:max-w-[min(96vw,1280px)]">
           <DialogHeader className="sticky top-0 z-20 flex-row items-center border-b border-[#ddd1bf] bg-[#fbf8f0]/95 px-3 py-2.5 backdrop-blur sm:px-5">
             <div className="flex min-w-0 flex-1 items-center gap-1">
               {detailStack.length > 1 && (
@@ -1170,8 +1170,8 @@ export default function Home() {
           </DialogHeader>
 
           {selectedBird && (
-            <div className="grid gap-0 md:grid-cols-[minmax(280px,0.82fr)_minmax(360px,1.18fr)]">
-              <div className="flex min-h-[430px] items-start justify-center overflow-auto bg-[#e9e1d4] p-5 sm:p-8 md:min-h-[670px] md:items-center">
+            <div className="grid gap-0 lg:grid-cols-[minmax(280px,0.82fr)_minmax(360px,1.18fr)]">
+              <div className="flex min-h-[430px] items-start justify-center overflow-auto bg-[#e9e1d4] p-5 sm:p-8 lg:min-h-[670px] lg:items-center">
                 <button type="button" onClick={() => setZoomed((value) => !value)} aria-label={zoomed ? '缩小卡面' : '放大卡面'} className={`w-full max-w-[360px] cursor-zoom-in rounded-2xl shadow-[0_20px_50px_rgb(50_39_23/24%)] transition duration-200 focus-visible:ring-3 focus-visible:ring-[#4c8068] focus-visible:outline-none ${zoomed ? 'scale-[1.3] cursor-zoom-out' : ''}`}>
                   <CardSprite sprite={selectedBird.sprite} highResolution className="w-full rounded-2xl" />
                 </button>
@@ -1214,8 +1214,8 @@ export default function Home() {
           )}
 
           {selectedBonus && (
-            <div className="grid gap-0 md:grid-cols-[minmax(260px,0.72fr)_minmax(380px,1.28fr)]">
-              <div className="flex min-h-[520px] items-start justify-center overflow-auto bg-[#e9e1d4] p-5 sm:p-8 md:min-h-[670px] md:items-center">
+            <div className="grid gap-0 lg:grid-cols-[minmax(260px,0.72fr)_minmax(380px,1.28fr)]">
+              <div className="flex min-h-[520px] items-start justify-center overflow-auto bg-[#e9e1d4] p-5 sm:p-8 lg:min-h-[670px] lg:items-center">
                 <button type="button" onClick={() => setZoomed((value) => !value)} aria-label={zoomed ? '缩小卡面' : '放大卡面'} className={`w-full max-w-[300px] cursor-zoom-in rounded-2xl shadow-[0_20px_50px_rgb(50_39_23/24%)] transition duration-200 focus-visible:ring-3 focus-visible:ring-[#4c8068] focus-visible:outline-none ${zoomed ? 'scale-[1.25] cursor-zoom-out' : ''}`}>
                   <CardSprite sprite={selectedBonus.sprite} highResolution className="w-full rounded-2xl" />
                 </button>

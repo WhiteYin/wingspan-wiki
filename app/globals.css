@@ -125,6 +125,13 @@
   background-clip: padding-box;
 }
 
+@media (min-width: 640px) {
+  .detail-dialog {
+    width: min(96vw, 1280px) !important;
+    max-width: min(96vw, 1280px) !important;
+  }
+}
+
 @media (max-width: 639px) {
   .detail-dialog {
     inset: 0 !important;
