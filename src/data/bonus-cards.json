@@ -1,0 +1,782 @@
+[
+  {
+    "id": "anatomist",
+    "index": 0,
+    "compatibilityEnum": 0,
+    "set": "originalCore",
+    "names": {
+      "en": "Anatomist",
+      "zh": "解剖学家"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 0,
+      "column": 0
+    },
+    "condition": {
+      "en": "Birds with body parts in their names",
+      "zh": "名字中含有身体部位的鸟类"
+    },
+    "explanation": {
+      "en": "Body parts include back, beak, belly, bill, breast, cap, chin, collar, crest, crown, eye, face, head, leg, neck, rump, shoulder, tail, throat, toe, wing",
+      "zh": "身体部位包括 back, beak, belly, bill, breast, cap, chin, collar, crest, crown, eye, face, head, leg, neck, rump, shoulder, tail, throat, toe, wing"
+    },
+    "scoring": {
+      "en": "2 to 3 birds: 3; 4+ birds: 7",
+      "zh": "2至3张鸟类卡: 得3分，4张及以上鸟类卡: 得7分"
+    },
+    "deckPercentage": 22,
+    "languageDependent": true,
+    "automa": true
+  },
+  {
+    "id": "backyardbirder",
+    "index": 1,
+    "compatibilityEnum": 4,
+    "set": "originalCore",
+    "names": {
+      "en": "Backyard Birder",
+      "zh": "后院养鸟人"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 0,
+      "column": 1
+    },
+    "condition": {
+      "en": "Birds worth less than 4 points",
+      "zh": "价值少于 4 分的鸟"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "5 to 6 birds: 3; 7+ birds: 6",
+      "zh": "5到6只鸟：3；7+只鸟：6"
+    },
+    "deckPercentage": 42,
+    "languageDependent": false,
+    "automa": false
+  },
+  {
+    "id": "birdcounter",
+    "index": 2,
+    "compatibilityEnum": 6,
+    "set": "originalCore",
+    "names": {
+      "en": "Bird Counter",
+      "zh": "鸟类计数员"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 0,
+      "column": 2
+    },
+    "condition": {
+      "en": "Birds with a flocking power",
+      "zh": "拥有集群类能力的鸟类"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "2 per bird",
+      "zh": "每只鸟获得2分"
+    },
+    "deckPercentage": 15,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "birdfeeder",
+    "index": 3,
+    "compatibilityEnum": 7,
+    "set": "originalCore",
+    "names": {
+      "en": "Bird Feeder",
+      "zh": "鸟类饲养人"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 0,
+      "column": 3
+    },
+    "condition": {
+      "en": "Birds that eat seed",
+      "zh": "吃种子的鸟类"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "5 to 7 birds: 3; 8+ birds: 7",
+      "zh": "5至7张鸟类卡: 得3分，8张及以上鸟类卡: 得7分"
+    },
+    "deckPercentage": 44,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "breedingmanager",
+    "index": 4,
+    "compatibilityEnum": null,
+    "set": "originalCore",
+    "names": {
+      "en": "Breeding Manager",
+      "zh": "育种工作者"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 0,
+      "column": 4
+    },
+    "condition": {
+      "en": "Birds that have at least 4 eggs laid on them",
+      "zh": "至少在上面下了 4 个蛋的鸟类"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "1 per bird",
+      "zh": "每只鸟获得1分"
+    },
+    "deckPercentage": "28*",
+    "languageDependent": false,
+    "automa": false
+  },
+  {
+    "id": "cartographer",
+    "index": 5,
+    "compatibilityEnum": 1,
+    "set": "originalCore",
+    "names": {
+      "en": "Cartographer",
+      "zh": "制图师"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 0,
+      "column": 5
+    },
+    "condition": {
+      "en": "Birds with geography terms in their names",
+      "zh": "名字中含有地理术语的鸟类"
+    },
+    "explanation": {
+      "en": "Terms include American, Atlantic, Baltimore, California, Canada, Carolina, Chihuahua, Corsican, Eastern, Eurasian, European, Inca, Mississippi, Moor, Mountain, Northern, Prairie, Sandhill, Savannah, Western",
+      "zh": "术语包括 American, Atlantic, Baltimore, California, Canada, Carolina, Chihuahua, Corsican, Eastern, Eurasian, European, Inca, Mississippi, Moor, Mountain, Northern, Prairie, Sandhill, Savannah, Western"
+    },
+    "scoring": {
+      "en": "2 to 3 birds: 3; 4+ birds: 7",
+      "zh": "2至3张鸟类卡: 得3分，4张及以上鸟类卡: 得7分"
+    },
+    "deckPercentage": 21,
+    "languageDependent": true,
+    "automa": true
+  },
+  {
+    "id": "ecologist",
+    "index": 6,
+    "compatibilityEnum": null,
+    "set": "originalCore",
+    "names": {
+      "en": "Ecologist",
+      "zh": "生态学家"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 0,
+      "column": 6
+    },
+    "condition": {
+      "en": "Birds in your habitat with the fewest birds.",
+      "zh": "你拥有最少鸟类的栖息地中的鸟。"
+    },
+    "explanation": {
+      "en": "Ties count.",
+      "zh": "相等数量计算在内。"
+    },
+    "scoring": {
+      "en": "2 per bird",
+      "zh": "每只鸟获得2分"
+    },
+    "deckPercentage": "-",
+    "languageDependent": false,
+    "automa": false
+  },
+  {
+    "id": "enclosurebuilder",
+    "index": 7,
+    "compatibilityEnum": 9,
+    "set": "originalCore",
+    "names": {
+      "en": "Enclosure Builder",
+      "zh": "密围建筑师"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 0,
+      "column": 7
+    },
+    "condition": {
+      "en": "Birds with ground nests",
+      "zh": "标有地面巢的鸟类"
+    },
+    "explanation": {
+      "en": "Birds must have a ground or star nest symbol.",
+      "zh": "鸟类必须带有地面或星形符号。"
+    },
+    "scoring": {
+      "en": "4 to 5 birds: 4; 6+ birds: 7",
+      "zh": "4至5张鸟类卡: 得4分，6张及以上鸟类卡: 得7分"
+    },
+    "deckPercentage": 31,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "falconer",
+    "index": 8,
+    "compatibilityEnum": 10,
+    "set": "originalCore",
+    "names": {
+      "en": "Falconer",
+      "zh": "驯鹰者"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 0,
+      "column": 8
+    },
+    "condition": {
+      "en": "Birds with a predator power",
+      "zh": "有猛禽能力的鸟类"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "2 per bird",
+      "zh": "每只鸟获得2分"
+    },
+    "deckPercentage": 13,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "fisherymanager",
+    "index": 9,
+    "compatibilityEnum": 11,
+    "set": "originalCore",
+    "names": {
+      "en": "Fishery Manager",
+      "zh": "渔场经理"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 0,
+      "column": 9
+    },
+    "condition": {
+      "en": "Birds that eat fish",
+      "zh": "吃鱼的鸟类"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "2 to 3 birds: 3; 4+ birds: 8",
+      "zh": "2至3张鸟类卡: 得4分，4张及以上鸟类卡: 得8分"
+    },
+    "deckPercentage": 18,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "foodwebexpert",
+    "index": 10,
+    "compatibilityEnum": 12,
+    "set": "originalCore",
+    "names": {
+      "en": "Food Web Expert",
+      "zh": "食物链专家"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 1,
+      "column": 0
+    },
+    "condition": {
+      "en": "Birds that eat only invertebrate",
+      "zh": "只吃无脊椎动物的鸟类"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "2 per bird",
+      "zh": "每只鸟获得2分"
+    },
+    "deckPercentage": 9,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "forester",
+    "index": 11,
+    "compatibilityEnum": 13,
+    "set": "originalCore",
+    "names": {
+      "en": "Forester",
+      "zh": "林务官"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 1,
+      "column": 1
+    },
+    "condition": {
+      "en": "Birds that can only live in forest",
+      "zh": "只能在森林栖息的鸟"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "3 to 4 birds: 4; 5 birds: 8",
+      "zh": "3至4张鸟类卡: 得4分，5 张鸟类卡: 得8分"
+    },
+    "deckPercentage": 24,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "historian",
+    "index": 12,
+    "compatibilityEnum": 2,
+    "set": "originalCore",
+    "names": {
+      "en": "Historian",
+      "zh": "历史学家"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 1,
+      "column": 2
+    },
+    "condition": {
+      "en": "Birds named after a person",
+      "zh": "根据人名命名的鸟类"
+    },
+    "explanation": {
+      "en": "Any bird with an 's in its name.",
+      "zh": "任何名称中带有 's 的鸟。"
+    },
+    "scoring": {
+      "en": "2 per bird",
+      "zh": "每只鸟获得2分"
+    },
+    "deckPercentage": 11,
+    "languageDependent": true,
+    "automa": true
+  },
+  {
+    "id": "largebirdspecialist",
+    "index": 13,
+    "compatibilityEnum": 14,
+    "set": "originalCore",
+    "names": {
+      "en": "Large Bird Specialist",
+      "zh": "大型鸟类专家"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 1,
+      "column": 3
+    },
+    "condition": {
+      "en": "Birds with wingspans over 65 cm",
+      "zh": "翼展长度大于65cm的鸟类"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "4 to 5 birds: 3; 6+ birds: 6",
+      "zh": "4至5张鸟类卡: 得3分，6张及以上鸟类卡: 得6分"
+    },
+    "deckPercentage": 35,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "nestboxbuilder",
+    "index": 14,
+    "compatibilityEnum": 15,
+    "set": "originalCore",
+    "names": {
+      "en": "Nest Box Builder",
+      "zh": "巢箱建筑师"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 1,
+      "column": 4
+    },
+    "condition": {
+      "en": "Birds with cavity nests",
+      "zh": "标有树洞巢的鸟类"
+    },
+    "explanation": {
+      "en": "Birds must have a cavity or star nest symbol.",
+      "zh": "鸟类必须带有树洞或星形符号。"
+    },
+    "scoring": {
+      "en": "4 to 5 birds: 4; 6+ birds: 7",
+      "zh": "4至5张鸟类卡: 得4分，6张及以上鸟类卡: 得7分"
+    },
+    "deckPercentage": 31,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "omnivorespecialist",
+    "index": 15,
+    "compatibilityEnum": 16,
+    "set": "originalCore",
+    "names": {
+      "en": "Omnivore Specialist",
+      "zh": "杂食动物专家"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 1,
+      "column": 5
+    },
+    "condition": {
+      "en": "Birds that eat wild",
+      "zh": "吃百搭食物的鸟类"
+    },
+    "explanation": {
+      "en": "Any bird that specifically has a wild symbol as part of its food cost.",
+      "zh": "任何在食物费用中带有百搭食物符号的鸟类。"
+    },
+    "scoring": {
+      "en": "2 per bird",
+      "zh": "每只鸟获得2分"
+    },
+    "deckPercentage": 16,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "oologist",
+    "index": 16,
+    "compatibilityEnum": null,
+    "set": "originalCore",
+    "names": {
+      "en": "Oologist",
+      "zh": "鸟蛋收藏家"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 1,
+      "column": 6
+    },
+    "condition": {
+      "en": "Birds that have at least 1 egg laid on them",
+      "zh": "至少在上面下了 1 个蛋的鸟类"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "7 to 8 birds: 3; 9+ birds: 6",
+      "zh": "7至8张鸟类卡: 得3分，9张及以上鸟类卡: 得6分"
+    },
+    "deckPercentage": "-",
+    "languageDependent": false,
+    "automa": false
+  },
+  {
+    "id": "passerinespecialist",
+    "index": 17,
+    "compatibilityEnum": 17,
+    "set": "originalCore",
+    "names": {
+      "en": "Passerine Specialist",
+      "zh": "燕雀类专家"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 1,
+      "column": 7
+    },
+    "condition": {
+      "en": "Birds with wingspans 30 cm or less",
+      "zh": "翼展长度小于等于30cm的鸟类"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "4 to 5 birds: 3; 6+ birds: 6",
+      "zh": "4至5张鸟类卡: 得3分，6张及以上鸟类卡: 得6分"
+    },
+    "deckPercentage": 35,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "photographer",
+    "index": 18,
+    "compatibilityEnum": 3,
+    "set": "originalCore",
+    "names": {
+      "en": "Photographer",
+      "zh": "摄影师"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 1,
+      "column": 8
+    },
+    "condition": {
+      "en": "Birds with colors in their names",
+      "zh": "名字中含有颜色的鸟类"
+    },
+    "explanation": {
+      "en": "Colors include ash, black, blue, bronze, brown, cerulean, chestnut, coal, ferruginous, gold, gray, grey, green, honey, indigo, lazuli, purple, red, rose, roseate, ruby, ruddy, rufous, snowy, violet, white, yellow",
+      "zh": "颜色包括 ash, black, blue, bronze, brown, cerulean, chestnut, coal, ferruginous, gold, gray, grey, green, honey, indigo, lazuli, purple, red, rose, roseate, ruby, ruddy, rufous, snowy, violet, white, yellow"
+    },
+    "scoring": {
+      "en": "4 to 5 birds: 3; 6+ birds: 6",
+      "zh": "4至5张鸟类卡: 得3分，6张及以上鸟类卡: 得6分"
+    },
+    "deckPercentage": 34,
+    "languageDependent": true,
+    "automa": true
+  },
+  {
+    "id": "platformbuilder",
+    "index": 19,
+    "compatibilityEnum": 18,
+    "set": "originalCore",
+    "names": {
+      "en": "Platform Builder",
+      "zh": "平台建筑师"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 1,
+      "column": 9
+    },
+    "condition": {
+      "en": "Birds with platform nests",
+      "zh": "标有平台巢的鸟类"
+    },
+    "explanation": {
+      "en": "Birds must have a platform or star nest symbol.",
+      "zh": "鸟类必须带有平台或星形符号。"
+    },
+    "scoring": {
+      "en": "4 to 5 birds: 4; 6+ birds: 7",
+      "zh": "4至5张鸟类卡: 得4分，6张及以上鸟类卡: 得7分"
+    },
+    "deckPercentage": 31,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "prairiemanager",
+    "index": 20,
+    "compatibilityEnum": 19,
+    "set": "originalCore",
+    "names": {
+      "en": "Prairie Manager",
+      "zh": "草原管理人"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 2,
+      "column": 0
+    },
+    "condition": {
+      "en": "Birds that can only live in grassland",
+      "zh": "只能在草原栖息的鸟类"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "2 to 3 birds: 3; 4+ birds: 8",
+      "zh": "2至3张鸟类卡: 得4分，4张及以上鸟类卡: 得8分"
+    },
+    "deckPercentage": 19,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "rodentologist",
+    "index": 21,
+    "compatibilityEnum": 20,
+    "set": "originalCore",
+    "names": {
+      "en": "Rodentologist",
+      "zh": "啮齿动物学家"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 2,
+      "column": 1
+    },
+    "condition": {
+      "en": "Birds that eat rodent",
+      "zh": "吃啮齿动物的鸟类"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "2 per bird",
+      "zh": "每只鸟获得2分"
+    },
+    "deckPercentage": 15,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "visionaryleader",
+    "index": 22,
+    "compatibilityEnum": null,
+    "set": "originalCore",
+    "names": {
+      "en": "Visionary Leader",
+      "zh": "具有远见的领导者"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 2,
+      "column": 2
+    },
+    "condition": {
+      "en": "Bird cards in hand at end of game",
+      "zh": "游戏结束时还在手中的鸟类卡"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "5 to 7 birds: 4; 8+ birds: 7",
+      "zh": "5至7张鸟类卡: 得4分，8张及以上鸟类卡: 得7分"
+    },
+    "deckPercentage": "-",
+    "languageDependent": false,
+    "automa": false
+  },
+  {
+    "id": "viticulturalist",
+    "index": 23,
+    "compatibilityEnum": 21,
+    "set": "originalCore",
+    "names": {
+      "en": "Viticulturalist",
+      "zh": "葡萄栽培专家"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 2,
+      "column": 3
+    },
+    "condition": {
+      "en": "Birds that eat fruit",
+      "zh": "吃水果的鸟类"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "2 to 3 birds: 3; 4+ birds: 7",
+      "zh": "2至3张鸟类卡: 得3分，4张及以上鸟类卡: 得7分"
+    },
+    "deckPercentage": 22,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "wetlandscientist",
+    "index": 24,
+    "compatibilityEnum": 22,
+    "set": "originalCore",
+    "names": {
+      "en": "Wetland Scientist",
+      "zh": "湿地科学家"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 2,
+      "column": 4
+    },
+    "condition": {
+      "en": "Birds that can only live in wetland",
+      "zh": "只能在湿地栖息的鸟"
+    },
+    "explanation": {
+      "en": null,
+      "zh": null
+    },
+    "scoring": {
+      "en": "3 to 4 birds: 3; 5 birds: 7",
+      "zh": "3至4张鸟类卡: 得3分，5 张鸟类卡: 得7分"
+    },
+    "deckPercentage": 26,
+    "languageDependent": false,
+    "automa": true
+  },
+  {
+    "id": "wildlifegardener",
+    "index": 25,
+    "compatibilityEnum": 23,
+    "set": "originalCore",
+    "names": {
+      "en": "Wildlife Gardener",
+      "zh": "野生园艺师"
+    },
+    "sprite": {
+      "sheet": "bonusCards",
+      "row": 2,
+      "column": 5
+    },
+    "condition": {
+      "en": "Birds with bowl nests",
+      "zh": "标有碗状巢的鸟类"
+    },
+    "explanation": {
+      "en": "Birds must have a bowl or star nest symbol.",
+      "zh": "鸟类必须带有碗状或星形符号。"
+    },
+    "scoring": {
+      "en": "4 to 5 birds: 4; 6+ birds: 7",
+      "zh": "4至5张鸟类卡: 得4分，6张及以上鸟类卡: 得7分"
+    },
+    "deckPercentage": 31,
+    "languageDependent": false,
+    "automa": true
+  }
+]

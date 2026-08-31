@@ -1,0 +1,393 @@
+{
+  "schemaVersion": 1,
+  "sets": [
+    {
+      "value": 0,
+      "id": "originalCore",
+      "name": {
+        "en": "Original Core",
+        "zh": "核心版"
+      }
+    },
+    {
+      "value": 1,
+      "id": "swiftStart",
+      "name": {
+        "en": "Swift Start",
+        "zh": "快速入门"
+      }
+    },
+    {
+      "value": 2,
+      "id": "european",
+      "name": {
+        "en": "European Expansion",
+        "zh": "欧洲扩展"
+      }
+    },
+    {
+      "value": 3,
+      "id": "oceania",
+      "name": {
+        "en": "Oceania Expansion",
+        "zh": "大洋洲扩展"
+      }
+    }
+  ],
+  "foodTypes": [
+    {
+      "value": 0,
+      "id": "invertebrate",
+      "name": {
+        "en": "Invertebrate",
+        "zh": "无脊椎动物"
+      }
+    },
+    {
+      "value": 1,
+      "id": "seed",
+      "name": {
+        "en": "Seed",
+        "zh": "种子"
+      }
+    },
+    {
+      "value": 2,
+      "id": "fish",
+      "name": {
+        "en": "Fish",
+        "zh": "鱼"
+      }
+    },
+    {
+      "value": 3,
+      "id": "fruit",
+      "name": {
+        "en": "Fruit",
+        "zh": "水果"
+      }
+    },
+    {
+      "value": 4,
+      "id": "rodent",
+      "name": {
+        "en": "Rodent",
+        "zh": "啮齿动物"
+      }
+    },
+    {
+      "value": 5,
+      "id": "nectar",
+      "name": {
+        "en": "Nectar",
+        "zh": "花蜜"
+      }
+    },
+    {
+      "value": 6,
+      "id": "wild",
+      "name": {
+        "en": "Wild",
+        "zh": "任意资源"
+      }
+    }
+  ],
+  "nestTypes": [
+    {
+      "value": 0,
+      "id": "nest_none",
+      "name": {
+        "en": "None",
+        "zh": "没有"
+      }
+    },
+    {
+      "value": 1,
+      "id": "bowl",
+      "name": {
+        "en": "Bowl",
+        "zh": "碗状"
+      }
+    },
+    {
+      "value": 2,
+      "id": "cavity",
+      "name": {
+        "en": "Cavity",
+        "zh": "树洞"
+      }
+    },
+    {
+      "value": 3,
+      "id": "ground",
+      "name": {
+        "en": "Ground",
+        "zh": "地面"
+      }
+    },
+    {
+      "value": 4,
+      "id": "platform",
+      "name": {
+        "en": "Platform",
+        "zh": "平台"
+      }
+    },
+    {
+      "value": 5,
+      "id": "nest_wild",
+      "name": {
+        "en": "Any",
+        "zh": "任意"
+      }
+    }
+  ],
+  "habitats": [
+    {
+      "value": 0,
+      "birdFlagIndex": null,
+      "id": "playbird",
+      "name": {
+        "en": "Play Bird",
+        "zh": "打出鸟类卡"
+      }
+    },
+    {
+      "value": 1,
+      "birdFlagIndex": 0,
+      "id": "forest",
+      "name": {
+        "en": "Forest",
+        "zh": "森林"
+      }
+    },
+    {
+      "value": 2,
+      "birdFlagIndex": 1,
+      "id": "grassland",
+      "name": {
+        "en": "Grassland",
+        "zh": "草原"
+      }
+    },
+    {
+      "value": 3,
+      "birdFlagIndex": 2,
+      "id": "wetland",
+      "name": {
+        "en": "Wetland",
+        "zh": "湿地"
+      }
+    }
+  ],
+  "powerColors": [
+    {
+      "value": 0,
+      "id": "none",
+      "name": {
+        "en": "None",
+        "zh": "无能力"
+      }
+    },
+    {
+      "value": 1,
+      "id": "brown",
+      "name": {
+        "en": "Brown",
+        "zh": "棕色能力"
+      }
+    },
+    {
+      "value": 2,
+      "id": "pink",
+      "name": {
+        "en": "Pink",
+        "zh": "粉色能力"
+      }
+    },
+    {
+      "value": 3,
+      "id": "teal",
+      "name": {
+        "en": "Teal",
+        "zh": "蓝绿色能力"
+      }
+    },
+    {
+      "value": 4,
+      "id": "white",
+      "name": {
+        "en": "White",
+        "zh": "白色能力"
+      }
+    },
+    {
+      "value": 5,
+      "id": "yellow",
+      "name": {
+        "en": "Yellow",
+        "zh": "黄色能力"
+      }
+    }
+  ],
+  "powerCategories": [
+    {
+      "value": 0,
+      "id": "none",
+      "name": {
+        "en": "None",
+        "zh": "无"
+      }
+    },
+    {
+      "value": 1,
+      "id": "cachingFood",
+      "name": {
+        "en": "Caching food",
+        "zh": "缓存食物"
+      }
+    },
+    {
+      "value": 2,
+      "id": "cardDrawing",
+      "name": {
+        "en": "Card drawing",
+        "zh": "抽取鸟卡"
+      }
+    },
+    {
+      "value": 3,
+      "id": "eggLaying",
+      "name": {
+        "en": "Egg laying",
+        "zh": "产蛋"
+      }
+    },
+    {
+      "value": 4,
+      "id": "flocking",
+      "name": {
+        "en": "Flocking",
+        "zh": "塞牌"
+      }
+    },
+    {
+      "value": 5,
+      "id": "foodFromBirdfeeder",
+      "name": {
+        "en": "Food from birdfeeder",
+        "zh": "从喂食器获得食物"
+      }
+    },
+    {
+      "value": 6,
+      "id": "foodFromSupply",
+      "name": {
+        "en": "Food from supply",
+        "zh": "从供应区获得食物"
+      }
+    },
+    {
+      "value": 7,
+      "id": "foodRelated",
+      "name": {
+        "en": "Food related",
+        "zh": "食物相关"
+      }
+    },
+    {
+      "value": 8,
+      "id": "huntingAndFishing",
+      "name": {
+        "en": "Hunting and fishing",
+        "zh": "捕猎与捕鱼"
+      }
+    },
+    {
+      "value": 9,
+      "id": "other",
+      "name": {
+        "en": "Other",
+        "zh": "其他"
+      }
+    },
+    {
+      "value": 10,
+      "id": "tucking",
+      "name": {
+        "en": "Tucking",
+        "zh": "塞牌"
+      }
+    }
+  ],
+  "powerFlags": [
+    {
+      "index": 0,
+      "id": "predator",
+      "name": {
+        "en": "Predator",
+        "zh": "捕食者"
+      }
+    },
+    {
+      "index": 1,
+      "id": "flocking",
+      "name": {
+        "en": "Flocking",
+        "zh": "群居"
+      }
+    },
+    {
+      "index": 2,
+      "id": "bonusCard",
+      "name": {
+        "en": "Bonus card",
+        "zh": "奖励卡相关"
+      }
+    }
+  ],
+  "spriteSheets": [
+    {
+      "id": "birdsOriginalCore",
+      "standardFile": "birds_originalcore.png",
+      "highResolutionFile": "birds_originalcore@2x.png",
+      "columns": 16,
+      "rows": 11,
+      "standardTile": {
+        "width": 154,
+        "height": 231
+      },
+      "highResolutionTile": {
+        "width": 240,
+        "height": 363
+      }
+    },
+    {
+      "id": "birdsSwiftStart",
+      "standardFile": "birds_swiftstart.png",
+      "highResolutionFile": "birds_swiftstart@2x.png",
+      "columns": 10,
+      "rows": 1,
+      "standardTile": {
+        "width": 154,
+        "height": 231
+      },
+      "highResolutionTile": {
+        "width": 240,
+        "height": 363
+      }
+    },
+    {
+      "id": "bonusCards",
+      "standardFile": "bonus_cards.png",
+      "highResolutionFile": null,
+      "columns": 10,
+      "rows": 3,
+      "standardTile": {
+        "width": 250,
+        "height": 630
+      },
+      "highResolutionTile": null
+    }
+  ]
+}

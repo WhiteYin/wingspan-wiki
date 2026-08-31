@@ -1,0 +1,149 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans-site);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-heading: var(--font-heading-site);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.65);
+  --radius-md: calc(var(--radius) * 0.82);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.35);
+  --radius-2xl: calc(var(--radius) * 1.7);
+  --radius-3xl: calc(var(--radius) * 2.1);
+}
+
+:root {
+  --font-sans-site: 'Noto Sans SC', 'Microsoft YaHei', 'PingFang SC', system-ui,
+    sans-serif;
+  --font-heading-site: 'Noto Serif SC', 'Songti SC', STSong, SimSun, serif;
+  --background: oklch(0.965 0.018 83);
+  --foreground: oklch(0.285 0.025 65);
+  --card: oklch(0.988 0.012 84);
+  --card-foreground: oklch(0.285 0.025 65);
+  --popover: oklch(0.99 0.01 84);
+  --popover-foreground: oklch(0.285 0.025 65);
+  --primary: oklch(0.39 0.072 163);
+  --primary-foreground: oklch(0.985 0.008 85);
+  --secondary: oklch(0.91 0.036 78);
+  --secondary-foreground: oklch(0.34 0.038 68);
+  --muted: oklch(0.925 0.02 80);
+  --muted-foreground: oklch(0.52 0.026 65);
+  --accent: oklch(0.88 0.075 72);
+  --accent-foreground: oklch(0.32 0.048 62);
+  --destructive: oklch(0.56 0.18 28);
+  --border: oklch(0.84 0.029 76);
+  --input: oklch(0.84 0.029 76);
+  --ring: oklch(0.52 0.09 158);
+  --radius: 0.8rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply font-sans scroll-smooth;
+    background: var(--background);
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    min-width: 320px;
+    background-image:
+      radial-gradient(circle at 8% 2%, rgb(255 255 255 / 70%), transparent 24rem),
+      linear-gradient(115deg, transparent 0 74%, rgb(43 91 70 / 4%) 74% 75%, transparent 75%);
+    background-attachment: fixed;
+  }
+
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+}
+
+::selection {
+  color: #fffdf7;
+  background: #346d56;
+}
+
+.field-paper {
+  background-color: rgb(255 253 247 / 88%);
+  background-image:
+    linear-gradient(rgb(86 72 48 / 3%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(86 72 48 / 2%) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.card-sprite {
+  background-repeat: no-repeat;
+  transform: translateZ(0);
+}
+
+.encyclopedia-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 260px 420px;
+}
+
+.thin-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(55 93 73 / 45%) transparent;
+}
+
+.thin-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: rgb(55 93 73 / 45%);
+  background-clip: padding-box;
+}
+
+@media (max-width: 639px) {
+  .detail-dialog {
+    inset: 0 !important;
+    width: 100vw !important;
+    max-width: none !important;
+    max-height: none !important;
+    translate: none !important;
+    transform: none !important;
+    border-radius: 0 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
