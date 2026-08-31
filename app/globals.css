@@ -163,7 +163,9 @@
     min-height: 100dvh !important;
     max-width: none !important;
     max-height: none !important;
-    translate: none !important;
+    --tw-translate-x: 0px !important;
+    --tw-translate-y: 0px !important;
+    translate: 0 0 !important;
     transform: none !important;
     box-sizing: border-box !important;
     display: grid !important;
